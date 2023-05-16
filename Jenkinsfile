@@ -19,7 +19,7 @@ pipeline{
             steps{
                 script{
                     sh ''' 
-                    echo "Running the grafana....."
+                    echo "Running the prometheus....."
                     ssh root@${hostname} "sh installation.sh"
                     echo "successfully completed"
                     '''
