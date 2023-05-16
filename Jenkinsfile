@@ -8,7 +8,9 @@ pipeline{
             steps{
                 script{
                 sh ''' 
+                echo "installing......"
                 scp installation.sh root@${hostname}:/root
+                echo "installed successfully"
                 '''
                 }
             }
